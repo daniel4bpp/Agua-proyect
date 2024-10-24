@@ -10,17 +10,16 @@ le>
         }
 
         #login-form {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
+			display: none;  /* Ocultar por defecto */
+			position: fixed; /* Posición fija */
+			top: 50%;        /* Centrado verticalmente */
+			left: 50%;       /* Centrado horizontalmente */
+			transform: translate(-50%, -50%); /* Ajuste para centrar */
+			background-color: white; /* Color de fondo del formulario */
+			padding: 20px;  /* Espaciado interno del formulario */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+			z-index: 1001;  /* Asegurar que esté por encima del botón */
+		}
 
         .form-container {
             background: white;
@@ -88,14 +87,17 @@ le>
         }
 
         #login-btn {
-            background-color: #007bff;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+			position: fixed; /* Mantener en una posición fija */
+			bottom: 20px;    /* Espacio desde la parte inferior de la pantalla */
+			right: 20px;     /* Espacio desde la derecha de la pantalla */
+			padding: 10px 20px; /* Espaciado dentro del botón */
+			background-color: #007bff; /* Color de fondo */
+			color: white;    /* Color del texto */
+			border: none;    /* Sin borde */
+			border-radius: 5px; /* Bordes redondeados */
+			cursor: pointer;  /* Cambiar el cursor al pasar por encima */
+			z-index: 1000;   /* Asegurar que esté por encima de otros elementos */
+		}
 
         #login-btn:hover {
             background-color: #0056b3;
